@@ -17,6 +17,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11">
 
 <?php wp_head(); ?>
+<link href="https://fonts.googleapis.com/css?family=Alegreya:400,700|Lato:700,900" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
