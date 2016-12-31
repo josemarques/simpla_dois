@@ -7,7 +7,7 @@ input,
 select,
 textarea {
 	color: #404040;
-	font-family: sans-serif;
+	font-family: 'Alegreya', serif;
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -19,11 +19,13 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: 'Lato', sans-serif;
 	clear: both;
 }
 
-p {
+p{
 	margin-bottom: 1.5em;
+	font-size: 20px;
 }
 
 dfn,
@@ -76,4 +78,20 @@ ins {
 
 big {
 	font-size: 125%;
+}
+
+
+
+.entry-title{
+	font-size: 4.5rem;
+	font-weight: 900;
+	line-height: 1;
+}
+.page-content,
+.entry-content,
+.entry-summary {
+	p,ul,ol{
+		font-size: 1.8rem;
+		font-weight: 400;
+	}
 }
