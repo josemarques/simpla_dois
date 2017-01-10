@@ -118,6 +118,18 @@ function simpla_dois_scripts() {
 add_action( 'wp_enqueue_scripts', 'simpla_dois_scripts' );
 
 /**
+ * Add features image indicator class to body 
+ */
+function simpla_dois_featured_image_class($classes) {
+	if ( has_post_thumbnail() ) {
+		array_push($classes, 'has-featured-image');
+	}
+		return $classes;
+	}
+add_action('body_class', 'simpla_dois_featured_image_class' );
+
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
