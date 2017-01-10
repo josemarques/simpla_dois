@@ -1,3 +1,35 @@
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
+
+.site-header{
+  position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  display: flex;
+  padding: 1rem 2.25rem;
+}
+
+.logged-in .site-header{
+  top: 48px;
+}
+
+.site-title{
+  margin: 0;
+}
+
+.site-description{
+  display: none;
+}
+
+.site-branding,
+.site-navigation{
+  flex: 1;
+}
+
+.has-featured-image{
+  .site-header a{
+    color: #fff;
+  }
+}
