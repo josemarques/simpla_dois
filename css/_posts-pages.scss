@@ -6,7 +6,20 @@
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0;
+	border: solid 4rem rgba(255,255,255,0);
+
+	@include breakpoint("<960px"){
+		border-width: 3rem;
+	}
+
+	@include breakpoint("<660px"){
+		border-width: 2rem;
+	}
+
+	@include breakpoint("<480px"){
+		border-width: 1.5rem;
+	}
 }
 
 .byline,
@@ -23,8 +36,67 @@
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em auto;
-	max-width: 50rem;
+	h1{
+		max-width: 42rem;
+	}
+	h2,h3,h4,h5,h6,p,ol,ul{
+		max-width: 32rem;
+	}
+	h1,h2,h3,h4,h5,h6{
+		margin: 1.5em auto;
+	}
+	p,ol,ul{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+.entry-header{
+	@include vertical-align-parent;
+	min-height: 75vh;
+	background-color: #efefef;
+	margin-bottom: 4rem;
+	overflow: hidden;
+
+	h1{
+		 padding: 2rem;
+	}
+
+	img{
+		position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: auto;
+    height: auto;
+
+    max-height: none;
+    max-width: none;
+
+    min-height: 100%;
+    min-width: 100%;
+
+    transform: translate(-50%, -50%);
+	}
+}
+
+.entry-header__wrapper{
+	@include vertical-align();
+	left: 0;
+	right: 0;
+}
+
+.has-post-thumbnail .entry-header{
+	h1{
+		color: #fff;
+	}
+}
+
+.entry-content{
+	p{
+		margin: 0 auto 1rem;
+	}
 }
 
 .page-links {
