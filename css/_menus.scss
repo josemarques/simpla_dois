@@ -3,9 +3,6 @@
 --------------------------------------------------------------*/
 .main-navigation {
 	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
 }
 
 .main-navigation ul {
@@ -73,6 +70,10 @@
 .main-navigation .current-menu-item > a,
 .main-navigation .current_page_ancestor > a,
 .main-navigation .current-menu-ancestor > a {
+}
+
+.menu-item{
+	margin-left: 0.5rem;
 }
 
 /* Small menu. */
