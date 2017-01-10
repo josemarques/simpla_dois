@@ -1,0 +1,18 @@
+/*--------------------------------------------------------------
+# Utils
+--------------------------------------------------------------*/
+
+@mixin vertical-align ($offset: 50%) {
+  position: absolute;
+  top: $offset;
+  -webkit-transform: translateY(-$offset);
+  -ms-transform: translateY(-$offset);
+  transform: translateY(-$offset);
+}
+
+@mixin vertical-align-parent {
+  position: relative;;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
